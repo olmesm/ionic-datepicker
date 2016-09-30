@@ -3,6 +3,7 @@
     <h1 class="title">{{mainObj.titleLabel || selctedDateEpoch | date : mainObj.dateFormat}}</h1>
   </ion-header-bar>
   <ion-content class="ionic_datepicker_modal_content">
+    <h1 class="title">{{selctedDateEpoch | date : mainObj.dateFormat}}</h1>
     <div class="">
       <div class="row text-center">
         <div class="col col-10 left_arrow" ng-click="prevMonth()">
@@ -61,27 +62,30 @@
   </ion-content>
   <ion-footer-bar class="footer">
     <div class="row padding_zero" ng-hide="mainObj.switchFooterLabels">
-      <button class="button button-clear button-block button_set" ng-if="!mainObj.closeOnSelect"
+      <button class="button button-positive button-full button_set" ng-if="!mainObj.closeOnSelect"
               ng-click="setIonicDatePickerDate()">{{mainObj.setLabel}}
       </button>
-      <button class="button button-clear button-block button_today"  ng-if="mainObj.showTodayButton"
+      <button class="button button-dark button-full button_today"  ng-if="mainObj.showTodayButton"
               ng-click="setIonicDatePickerTodayDate()">{{mainObj.todayLabel}}
       </button>
-      <button class="button button-clear button-block button_close"
+      <button class="button button-stable button-full button_close"
               ng-click="closeIonicDatePickerModal()">{{mainObj.closeLabel}}
       </button>
     </div>
 
     <div class="row padding_zero" ng-show="mainObj.switchFooterLabels">
-      <button class="button button-clear button-block button_close"
+      <button class="button button-stable button-full button_close"
         ng-click="closeIonicDatePickerModal()">{{mainObj.closeLabel}}
       </button>
-      <button class="button button-clear button-block button_today"  ng-if="mainObj.showTodayButton"
+      <button class="button button-dark button-full button_today"  ng-if="mainObj.showTodayButton"
         ng-click="setIonicDatePickerTodayDate()">{{mainObj.todayLabel}}
       </button>
-      <button class="button button-clear button-block button_set" ng-if="!mainObj.closeOnSelect"
+      <button class="button button-positive button-full button_set" ng-if="!mainObj.closeOnSelect"
               ng-click="setIonicDatePickerDate()">{{mainObj.setLabel}}
       </button>
     </div>
   </ion-footer-bar>
 </ion-modal-view>
+stable
+
+positive

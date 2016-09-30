@@ -147,7 +147,9 @@
   background-color: #009688;
 }
 
-.ionic_datepicker_modal .header .title, .ionic_datepicker_modal .header .button, .ionic_datepicker_modal .footer .title, .ionic_datepicker_modal .footer .button {
+.ionic_datepicker_modal .header .title,
+.ionic_datepicker_modal .header .button,
+.ionic_datepicker_modal .footer .title {
   color: #ffffff;
 }
 
