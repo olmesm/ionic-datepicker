@@ -1,7 +1,11 @@
 <ion-modal-view class="ionic_datepicker_modal">
   <ion-header-bar class="bar bar-header bar-dark">
+    <div class="title-header">
       <i class="icon-Calendar"></i>
-      <div class="title-text">{{mainObj.titleLabel || selctedDateEpoch | date : mainObj.dateFormat}}</div>
+      <div class="title-text">
+        {{mainObj.titleLabel || selctedDateEpoch | date : mainObj.dateFormat}}
+      </div>
+    </div>
   </ion-header-bar>
   <ion-content class="ionic_datepicker_modal_content">
     <h1 class="title">{{ selctedDateEpoch | date : mainObj.dateFormat}}</h1>
